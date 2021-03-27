@@ -1,10 +1,14 @@
-import Header from "../Header"
-import Footer from "../Footer"
+import MobHeaderButton from "../Header/mobHeaderButton";
+import MobHeaderNav from "../Header/mobHeaderNav";
+import Footer from "../Footer";
 
-const Layout = (props) => <div className={"Layout"}>
-    <Header />
+const Layout = (props) => (
+  <div className={"Layout"}>
+    <MobHeaderButton />
+    <MobHeaderNav />
     {props.children}
     <Footer />
-           </div>;
+  </div>
+);
 
 export default Layout;
